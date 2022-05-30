@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+    --text: #c8d2db;
+    --background: #1f1e28;
+    --modal: #1f1e28;
+    --border-color: #2d3846;
+    --text-secondary: #c8d2db;
+    --text1: #2d3846;
+    --modal1: #fff;
+    --action-button-text1: #2493df;
+    --action-button-hover1: #dbe6eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+    font-size: 14px;
+   
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background:#2493df;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #f2f5f7;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 5rem 9rem;
+}
+/* ------------------------------for all button------------------------ */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius:.5rem;
+    color: #fff;
+    background: var(--action-button-text1);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+   border: none;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    background: rgb(3, 138, 255);
+}
+/* --------------------------------------------------------------------- */
+
+/* -------------------------for all heading---------------------------- */
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .1rem;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+}
+
+.heading span {
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--text1);
+    background: var(--modal1);
+}
+/* --------------------------------------------------------------------- */
+
+/* ------------------------------- Navbar ------------------------------- */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: var(--modal);
+    color: #fff;
+    z-index: 100;
+    height: 70px;
+}
+
+body {
+    position: relative;
+
+}
+
+
+.navHeadingDiv a {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+.navContentDiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navContentDiv div {
+    margin: 7px;
+}
+
+.navContentDiv div a {
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* .navContentDiv div a:hover {
+color: black;
+} */
+
+#hamMenu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin: 0px 10px 0px 0px;
+    display: none;
+}
+
+#close-hamMenu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin: 0px 10px 0px 0px;
+    display: none;
+
+}
+
+
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------home-------------------------- */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.home .row {
+    background: var(--modal1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.home .row .content {
+  
+    color: var(--text1);
+}
+
+.home .row .content h5 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: 14px;
+    text-transform: capitalize;
+    color: var(--text1);
+}
+
+.home .row .content h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--modal);
+}
+
+.home .row .content .btn {
+    background: var(--action-button-text1);
+    padding: 8px 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 30px 30px 0px 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.home .box {
+    margin-top: 22px;
+    font-weight: 400;
+    display: block;
+    line-height: 30px;
+
+}
+
+.home .box a {
+
+    color: var(--logo1);
+    padding: .5rem 0;
+    display: block;
+    font-size: 1.8rem;
+
+
+
+}
+
+.home .box a i {
+    color: var(--modal);
+    padding-right: .5rem;
+}
+
+.home .box a:hover i {
+    padding-right: 2rem;
+}
+
+.home .row .share {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.home .row .share a {
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    line-height: 5rem;
+    color: var(--modal);
+    border: .5px solid var(--modal-border);
+    margin: 1rem 1rem;
+    border-radius: 50%;
+}
+
+.home .row .share a:hover {
+    background: #2493df;
+    color: white;
+}
+/* ------------------------------------------------------------------ */
+
+
+/* -----------------------------------------about--------------------------------- */
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    background: var(--modal1);
+    padding: 3rem 0;
+  
+}
+.about .content {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+   padding: 0 2rem;
+}
+.about .content h1 {
+    font-size: 4rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+.about .content p {
+    font-size: 1.8rem;
+    line-height: 2;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+.about .content .btn
+ {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: white;
+    background: var(--action-button-text1);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    width: 20rem;
+}
+
+.about .image img{
+  width: 40rem;
+}
+
+/* -------------------------------------------------------------- */
+
+
+
+/* ---------------------------------for-you-------------------------------- */
+
+
+
+.for_you .for_you-slider
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for_you .heading-s 
+{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.for_you .heading-s span
+ {
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--text1);
+    background: var(--modal1);
+}
+
+.for_you .box 
+{
+    border: 1px solid var(--border-color);
+    background: var(--modal1);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.for_you .box i 
+{
+    height: 5rem;
+    width: 5rem;
+    border: var(--border);
+    border-radius: 50%;
+    object-fit: cover;
+    padding-top: 1rem;
+    color: var(--action-button-text1);
+}
+
+.for_you .box h3 
+{
+    font-size: 2rem;
+    color: var(--text1);
+    padding: .5rem 0;
+}
+
+.for_you .box p 
+{
+    color: var(--text1);
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0rem;
+    font-weight: 400;
+}
+
+.swiper-button-next,
+.swiper-button-prev
+ {
+    height: 4rem;
+    width: 4rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+
+    color: var(--modal);
+}
+
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------skills--------------------- */
+
+.skills .row {
+    background: var(--modal1);
+ padding: 2rem 0;
+    border: 1px solid var(--border-color);
+}
+
+.skills .row .row-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills .row .row-image svg {
+    margin: 0 15px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+/* -------------------------------------experiance------------------------------ */
+
+.experiance {
+    margin-top: 5rem;
+}
+
+.experiance .experiance-slider {
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.experiance .experiance-slider .content {
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--text1);
+    background: var(--modal1);
+}
+
+.experiance .content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--modal);
+
+}
+
+.experiance .content h4 {
+    font-size: 1.7rem;
+    line-height: 2;
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.experiance .content h4 span {
+    color: var(--action-button-text1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+    padding: 1rem 0;
+    margin-right: .5rem;
+}
+
+.experiance .content p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 2rem;
+}
+
+.experiance .content p span {
+    color: var(--action-button-text1);
+    margin-left: 5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* -----------------------------------------recent works---------------------------- */
+
+.recent-works .heading-s {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    position: relative;
+}
+
+.recent-works .row {
+
+    background: var(--modal1);
+    padding: 5rem;
+}
+
+.recent-works .heading-s span {
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--modal);
+}
+
+.recent-works .works-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.recent-works .works-slider .wrapper {
+    margin: 0 4rem;
+
+}
+
+.recent-works .wrapper .box {
+
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+
+    margin: 2rem 0;
+
+}
+
+.recent-works .wrapper .box img {
+        width: 25rem;
+}
+
+
+
+.recent-works .wrapper .box .overlay {
+    position: absolute;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(3, 139, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in;
+
+
+}
+
+.recent-works .wrapper .overlay .text {
+    color: var(--text1);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    background: var(--modal1);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 18rem;
+    text-align: center;
+}
+
+.recent-works .wrapper .overlay .text a {
+    color: var(--black);
+    font-weight: 500;
+
+}
+
+.recent-works .wrapper .box:hover .overlay {
+    opacity: 1;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    padding: .5rem 2rem;
+
+    text-transform: capitalize;
+    color: var(--text1);
+    text-align: center;
+    font-weight: 600;
+    line-height: 2;
+}
+
+
+
+.login-form-container form .box {
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--modal-border);
+    padding: 1rem 1.2rem;
+    color: var(--text1);
+    border: 1px solid var(--border-color);
+    text-transform: none;
+}
+
+#my-form-status{
+    color: green;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* footer */
+
+.footer .box {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+
+}
+
+
+.footer .box a {
+    color: var(--text-secondary1);
+    padding: 2rem 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer .box a:hover {
+    color: var(--text1);
+}
+
+.footer .box a i {
+    color: var(--text1);
+    padding-right: .5rem;
+}
+
+.footer .credit {
+    border-top: .5px solid var(--border-color);
+    margin-top: 5rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--text1);
+    text-align: center;
+}
+
+.footer .credit span {
+    color: var(--text1);
+}
+
+
+
+
